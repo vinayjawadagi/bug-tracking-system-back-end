@@ -55,6 +55,5 @@ public class Comment {
     return createdAt;
   }
 
-  // Constructors, getters, setters...
 }
 

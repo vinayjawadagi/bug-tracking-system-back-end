@@ -111,4 +111,16 @@ public class Bug {
     public Project getProject() {
         return project;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setProject(Project project) {
+        this.project = project;
+    }
+
+    public void setCreatedBy(User createdBy) {
+        this.createdBy = createdBy;
+    }
 }
