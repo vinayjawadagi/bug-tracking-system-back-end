@@ -24,6 +24,49 @@ public class Project {
   @OneToMany(mappedBy = "project", cascade = CascadeType.ALL)
   private List<Bug> bugs;  // Each project can have multiple bugs
 
-  // Constructors, getters, setters...
+  public Project(List<Bug> bugs, String description, String name) {
+    this.bugs = bugs;
+    this.description = description;
+    this.name = name;
+  }
+
+  public Project(String name, String description, List<Bug> bugs) {
+    this.name = name;
+    this.description = description;
+    this.bugs = bugs;
+  }
+
+  public Project() {
+
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public List<Bug> getBugs() {
+    return bugs;
+  }
+
+  public void setBugs(List<Bug> bugs) {
+    this.bugs = bugs;
+  }
+
+  public Long getId() {
+    return id;
+  }
+
 }
 

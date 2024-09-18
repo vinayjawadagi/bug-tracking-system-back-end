@@ -24,6 +24,37 @@ public class Comment {
 
   private LocalDateTime createdAt;  // Timestamp for when the comment was created
 
+  public Comment(String content, User user, Bug bug, LocalDateTime createdAt) {
+    this.content = content;
+    this.user = user;
+    this.bug = bug;
+    this.createdAt = createdAt;
+  }
+
+  public Comment() {
+
+  }
+
+  public Long getId() {
+    return id;
+  }
+
+  public String getContent() {
+    return content;
+  }
+
+  public User getUser() {
+    return user;
+  }
+
+  public Bug getBug() {
+    return bug;
+  }
+
+  public LocalDateTime getCreatedAt() {
+    return createdAt;
+  }
+
   // Constructors, getters, setters...
 }
 
