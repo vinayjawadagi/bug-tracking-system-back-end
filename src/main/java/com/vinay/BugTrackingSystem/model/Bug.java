@@ -40,6 +40,14 @@ public class Bug {
 
     }
 
+    public Bug(String title, String description, Status status, Priority priority, User createdBy) {
+        this.title = title;
+        this.description = description;
+        this.status = status;
+        this.priority = priority;
+        this.createdBy = createdBy;
+    }
+
     public Bug(String title, String description, Status status, Priority priority, Project project, User assignedTo, User createdBy, List<Comment> comments) {
         this.title = title;
         this.description = description;
